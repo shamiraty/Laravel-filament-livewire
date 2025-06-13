@@ -13,6 +13,71 @@ https://filamentphp.com/
 
 This guide will walk you through setting up a new Laravel project, installing Filament, creating an admin user, defining models, and integrating them into the Filament sidebar dashboard.
 
+# SETUP
+
+# 🚀 Laravel Setup Guide using XAMPP, Composer, and Artisan
+
+This guide walks you through setting up a Laravel project from scratch using **XAMPP**, **Composer**, and **Artisan** commands.
+
+---
+
+## ✅ 1. Install XAMPP
+
+**XAMPP** is a free PHP development environment that includes Apache, MySQL, and PHP.
+
+### Steps:
+1. Go to: [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html)
+2. Download XAMPP for your OS (Windows/Mac/Linux).
+3. Install it and start the **Apache** and **MySQL** services using the XAMPP Control Panel.
+
+---
+
+## ✅ 2. Install Composer
+
+**Composer** is the dependency manager that Laravel uses.
+
+### Steps:
+1. Go to: [https://getcomposer.org/](https://getcomposer.org/)
+2. Download and install Composer.
+3. Verify installation by running in terminal or command prompt:
+
+```bash
+composer --version
+```
+
+---
+
+## ✅ 3. Install Laravel Installer (Optional)
+
+Installing Laravel globally allows you to create projects with `laravel new`.
+
+```bash
+composer global require laravel/installer
+```
+
+Make sure Composer’s global `vendor/bin` directory is in your system’s `PATH`:
+
+- **Windows**: `%USERPROFILE%\AppData\Roaming\Composer\vendor\bin`
+- **Mac/Linux**: `~/.composer/vendor/bin` or `~/.config/composer/vendor/bin`
+
+---
+
+## ✅ 4. Create a New Laravel Project
+
+### Option 1: Using Laravel Installer
+
+```bash
+laravel new myproject
+```
+
+### Option 2: Using Composer
+
+```bash
+composer create-project laravel/laravel myproject
+```
+
+# FILAMENT SETUP
+
 1. Start Laravel Project
 ```php
 composer create-project laravel/laravel filament
